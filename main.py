@@ -11,3 +11,11 @@ print("New lines can be created with a backslash and n.")
 #find the length of the user's string input
 str = input("What is your name? ")
 print(len(str))
+
+#program to swap two input variables
+a = input("a: ")
+b = input("b: ")
+a,b = b,a
+print("a =", a)
+print("b =", b)
+
