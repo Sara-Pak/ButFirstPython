@@ -5,7 +5,7 @@
 #5 make sure the cursor shows on the new line.
 
 import prettytable as pt
-print("Welcome to the Bane-Name Generator!") #1
+print("Welcome to the Band-Name Generator!") #1
 city = input("What's name of the city you grew up in? ") #2
 pet = input("What's the name of your pet? ") #3
 
