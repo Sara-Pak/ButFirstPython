@@ -19,3 +19,29 @@ a,b = b,a
 print("a =", a)
 print("b =", b)
 
+#manipulating strings.
+print("hello" + " " + "Yoofee")
+#input() will get user's input in consol, then print() will print the word "hello" and the user's input
+print("hello " + input("What's your name?"))
+
+#count the length of the string and print the output.
+name = input("what is yo name?")
+length = len(name)
+print(length)
+
+#data types:basic-> string, integer, float, boolean
+# string
+print("Hello"[0]) #output-> H
+
+#adding input's double digits ie: 25 = 2+5 = 7
+two_digit_number = input("Type a two digit number:")
+print(type(two_digit_number)) #str
+
+#subscript the str id
+first_digit = two_digit_number[0]
+second_digit = two_digit_number[1]
+
+result = int(first_digit) + int(second_digit) #convert str to int
+print(result)
+
+
