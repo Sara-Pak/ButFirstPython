@@ -44,4 +44,21 @@ second_digit = two_digit_number[1]
 result = int(first_digit) + int(second_digit) #convert str to int
 print(result)
 
+#round up numbers to whole number
+print(round(8/3)) #2
+print(round(8/3, 2)) #,2 move 2 decimal places (2.67)
+
+print(8//3)
+result = 4/2 #2
+resuly /= 2
+print(result) #1
+
+score = 0
+#user scores a point
+score += 1
+print(score) # equals 1
+
+#f-string
+f"your score is {score}" #converts automatically
+
 
