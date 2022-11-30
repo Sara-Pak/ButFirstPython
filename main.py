@@ -44,6 +44,9 @@ second_digit = two_digit_number[1]
 result = int(first_digit) + int(second_digit) #convert str to int
 print(result)
 
+a = int("5") / int(2.7)
+print(type(a))
+
 #round up numbers to whole number
 print(round(8/3)) #2
 print(round(8/3, 2)) #,2 move 2 decimal places (2.67)
