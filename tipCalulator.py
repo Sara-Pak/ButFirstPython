@@ -4,19 +4,16 @@
 
 import prettytable as pt
 print("Welcome to my tip calculator")
-total_bill_cost = input("What was the total bill? ")
-tip_percentage = input("What percentage tip would you like to give? 10%, 12%, or 15%?")
-split_bill = input("How many people to split the bill? ")
+total_bill_cost = float(input("What was the total bill? "))
+tip_percentage = float(input("What percentage tip would you like to give? 10%, 12%, or 15%? "))
+how_many_guests = int(input("How many people to split the bill? "))
 
-tip_percentage = (total_bill_cost/split_bill) *
+each_person_pay = (total_bill_cost / how_many_guests) * tip_percentage
 
-width = 26
-
+width = 300
 table = pt.PrettyTable()
 
 table.field_names = ['Each person is responsible for: ']
-[table.add_row([total_bill_cost[i:i + width]])]
+[table.add_row([each_person_pay])]
 
-print(round(table))
-
-
+print(table)
