@@ -64,4 +64,8 @@ print(score) # equals 1
 #f-string
 f"your score is {score}" #converts automatically
 
+#conditions
+#if condition: do this else do this
+
+
 
