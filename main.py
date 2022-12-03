@@ -53,7 +53,7 @@ print(round(8/3, 2)) #,2 move 2 decimal places (2.67)
 
 print(8//3)
 result = 4/2 #2
-resuly /= 2
+result /= 2
 print(result) #1
 
 score = 0
@@ -65,7 +65,24 @@ print(score) # equals 1
 f"your score is {score}" #converts automatically
 
 #conditions
-#if condition: do this else do this
+#if condition:
+    # do this
+# else:
+    # do this
+
+water_level = 50
+if water_level > 80:
+    print("Drain water")
+else:
+    print("Continue")
+
+print("welcome to the rollercoaster ride!")
+height = int(input("what is your height?"))
+
+if height >= 120:
+    print("you can ride the rollcoaster")
+else:
+    print("Sorry, maybe next year!")
 
 
 
