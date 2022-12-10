@@ -26,4 +26,11 @@ print("Welcome to treasure island.")
 print("your mission is to find the treasure.")
 choice1 = input("you\'re at a crossroad, where do you want to go? Type "left" or "right". ").lower()
 
+if choice1 == "left":
+    # continue in the game
+if choice1 == "right":
+    print("You fell into a hole. Game Over.")
+else:
+
+
 
