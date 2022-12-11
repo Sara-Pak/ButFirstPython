@@ -1,5 +1,5 @@
 # Adventure game
-print("
+print('''
 *******************************************************************************
           |                   |                  |                     |
  _________|________________.=""_;=.______________|_____________________|_______
@@ -20,7 +20,13 @@ ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
 ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/[TomekK]
 *******************************************************************************
-")
+ _                                     
+| |                                    
+| |_ _ __ ___  __ _ ___ _   _ _ __ ___ 
+| __| '__/ _ \/ _` / __| | | | '__/ _ \
+| |_| | |  __/ (_| \__ \ |_| | | |  __/
+ \__|_|  \___|\__,_|___/\__,_|_|  \___|
+''')
 
 print("Welcome to treasure island.")
 print("your mission is to find the treasure.")
@@ -28,9 +34,11 @@ choice1 = input("you\'re at a crossroad, where do you want to go? Type "left" or
 
 if choice1 == "left":
     # continue in the game
-if choice1 == "right":
-    print("You fell into a hole. Game Over.")
-else:
+    choice2 = input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across.').lower()
+if choice2 == "wait":
+    choice3 = input("You arrived at the island unharmred. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?").lower()
+
+
 
 
 
