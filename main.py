@@ -1,74 +1,74 @@
-#day 1 - python print function
+# day 1 - python print function
 print("Day 1 - Python Print Function")
 print("The function is declared like this:")
 print("print('what to print')")
 
 print("Day 1 - String Manipulation")
-print("String Concatenation is done with the "+" sign.")
+print("String Concatenation is done with the " + " sign.")
 print('e.g. print("Hello " + "world")')
 print("New lines can be created with a backslash and n.")
 
-#find the length of the user's string input
+# find the length of the user's string input
 str = input("What is your name? ")
 print(len(str))
 
-#program to swap two input variables
+# program to swap two input variables
 a = input("a: ")
 b = input("b: ")
-a,b = b,a
+a, b = b, a
 print("a =", a)
 print("b =", b)
 
-#manipulating strings.
+# manipulating strings.
 print("hello" + " " + "Yoofee")
-#input() will get user's input in consol, then print() will print the word "hello" and the user's input
+# input() will get user's input in consol, then print() will print the word "hello" and the user's input
 print("hello " + input("What's your name?"))
 
-#count the length of the string and print the output.
+# count the length of the string and print the output.
 name = input("what is yo name?")
 length = len(name)
 print(length)
 
-#data types:basic-> string, integer, float, boolean
+# data types:basic-> string, integer, float, boolean
 # string
-print("Hello"[0]) #output-> H
+print("Hello"[0])  # output-> H
 
-#adding input's double digits ie: 25 = 2+5 = 7
+# adding input's double digits ie: 25 = 2+5 = 7
 two_digit_number = input("Type a two digit number:")
-print(type(two_digit_number)) #str
+print(type(two_digit_number))  # str
 
-#subscript the str id
+# subscript the str id
 first_digit = two_digit_number[0]
 second_digit = two_digit_number[1]
 
-result = int(first_digit) + int(second_digit) #convert str to int
+result = int(first_digit) + int(second_digit)  # convert str to int
 print(result)
 
 a = int("5") / int(2.7)
 print(type(a))
 
-#round up numbers to whole number
-print(round(8/3)) #2
-print(round(8/3, 2)) #,2 move 2 decimal places (2.67)
+# round up numbers to whole number
+print(round(8 / 3))  # 2
+print(round(8 / 3, 2))  # ,2 move 2 decimal places (2.67)
 
-print(8//3)
-result = 4/2 #2
+print(8 // 3)
+result = 4 / 2  # 2
 result /= 2
-print(result) #1
+print(result)  # 1
 
 score = 0
-#user scores a point
+# user scores a point
 score += 1
-print(score) # equals 1
+print(score)  # equals 1
 
-#f-string
-f"your score is {score}" #converts automatically
+# f-string
+f"your score is {score}"  # converts automatically
 
-#conditions
-#if condition:
-    # do this
+# conditions
+# if condition:
+# do this
 # else:
-    # do this
+# do this
 
 water_level = 50
 if water_level > 80:
@@ -84,5 +84,24 @@ if height >= 120:
 else:
     print("Sorry, maybe next year!")
 
+# while loops
+x = 0
+while x < 5:
+    print("Not there yet, x=" + str(x))
+    x = x + 1
+print("x=" + str(x))
+
+# infinite loop - loops that keeps excuting / never stops.
+while x % 2 == 0:
+    x = x / 2
+    # example:
 
 
+def print_range(start, end):
+    # loop through the numbers from start to end
+    n = start
+    while n <= end:
+        print(n)
+
+
+print_range(1, 5)  # should print 1 2 3 4 5 (each number on its own line)
