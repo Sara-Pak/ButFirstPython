@@ -106,3 +106,27 @@ def print_range(start, end):
 
 
 print_range(1, 5)  # should print 1 2 3 4 5 (each number on its own line)
+
+# example 2
+while true:
+    do_something_cool()
+    if user_requested_to_stop():
+        break # stop infnite loop
+
+#for loop
+for x in range(5):
+    print(x)
+
+#example
+friends  = ['taylor', 'alex', 'pat', 'eli']
+for friends in friends:
+    print("hi" + friend)
+
+values = [ 23, 52, 59, 48 ]
+sum = 0
+length = 0
+for values in values:
+    sum += value
+    length += 1
+
+print("Total sum: " + str(sum) + " - average: " + str(sum/length))
