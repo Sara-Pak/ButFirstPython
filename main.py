@@ -108,38 +108,72 @@ def print_range(start, end):
 print_range(1, 5)  # should print 1 2 3 4 5 (each number on its own line)
 
 # example 2
-while true:
-    do_something_cool()
-    if user_requested_to_stop():
-        break # stop infnite loop
+# while true:
+#   do_something_cool()
+#  if user_requested_to_stop():
+#     break # stop infnite loop
 
-#for loop
+# for loop
 for x in range(5):
     print(x)
 
-#example
-friends  = ['taylor', 'alex', 'pat', 'eli']
+# example
+friends = ['taylor', 'alex', 'pat', 'eli']
 for friends in friends:
-    print("hi" + friend)
+    print("hi" + friends)
 
-values = [ 23, 52, 59, 48 ]
+values = [23, 52, 59, 48]
 sum = 0
 length = 0
 for values in values:
-    sum += value
+    sum += values
     length += 1
 
-print("Total sum: " + str(sum) + " - average: " + str(sum/length))
+print("Total sum: " + str(sum) + " - average: " + str(sum / length))
 
-#another loop example
+# another loop example
 product = 1
-for n in range(1,10)
+for n in range(1, 10):
     product = product * n
 
 print(product)
 
-#and another
+
+# and another
 def to_celcius(x):
-    return (x-32)*5/9
-for x in range(0,101,10): #range with 3 parameters
+    return (x - 32) * 5 / 9
+
+
+for x in range(0, 101, 10):  # range with 3 parameters
     print(x, to_celcius(x))
+
+# nested loops
+# for left in range(7):
+# for right in range(left,7):
+# print(""[" + str(left) + "|" str(right) + "]" end =" "")
+
+print()
+
+# another
+teams = ['dragons', 'wolves', 'pandas', 'unicorns']
+for home_team in teams:
+    for away_teams in teams:
+        if home_team != away_teams:
+            print(home_team + " vs " + away_teams)
+
+# ANOTHER
+for x in 25:
+    print(x)
+
+for x in [25]:
+    print(x)
+
+
+# another
+def greet_friends(friends):
+    for friend in friends:
+        print("Hi " + friend)
+
+
+greet_friends(['taylor', 'lois', 'kenny'])
+
