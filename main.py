@@ -203,4 +203,7 @@ print(is_power_of(8, 2))  # Should be True
 print(is_power_of(64, 4))  # Should be True
 print(is_power_of(70, 10))  # Should be False
 
-
+# how to apply a discount % on a value
+price = 50  # initial price
+price = price * 0.85  # applying the discount
+print(price)  # 42.5
