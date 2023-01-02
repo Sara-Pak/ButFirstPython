@@ -51,6 +51,9 @@ print(type(a))
 print(round(8 / 3))  # 2
 print(round(8 / 3, 2))  # ,2 move 2 decimal places (2.67)
 
+# // integer division
+# % the remainder of a division
+# ** exponentiation ie: 4*3 means 4*4*4
 print(8 // 3)
 result = 4 / 2  # 2
 result /= 2
@@ -199,3 +202,5 @@ def is_power_of(number, base):
 print(is_power_of(8, 2))  # Should be True
 print(is_power_of(64, 4))  # Should be True
 print(is_power_of(70, 10))  # Should be False
+
+
